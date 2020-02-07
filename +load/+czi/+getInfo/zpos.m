@@ -1,6 +1,6 @@
 function [z_info, currentZ, totalZ] = zpos(im_str)
-%ZPOS Summary of this function goes here
-%   Detailed explanation goes here
+%ZPOS gets z-plane information from the image string of bioformats
+
     idx_1 = strfind(im_str,'Z=');
     
     if isempty(idx_1)

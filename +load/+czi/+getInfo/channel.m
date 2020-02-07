@@ -1,6 +1,6 @@
 function [c_info, currentC, totalC] = channel(im_str)
-%CHANNEL Summary of this function goes here
-%   Detailed explanation goes here
+%CHANNEL gets channel information from the image string of bioformats
+
     idx_1 = strfind(im_str,'C=');
     
     if isempty(idx_1)
